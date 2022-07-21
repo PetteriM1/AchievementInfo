@@ -1,0 +1,14 @@
+name: AchievementInfo
+main: me.petterim1.achievements.Plugin
+version: "${pom.version}"
+api: ["1.0.13"]
+author: PetteriM1
+commands:
+  achievements:
+    usage: "/achievements"
+    description: "Show achievements"
+    permission: achievements.command
+permissions:
+  achievements.command:
+    description: "Permission for /achievements command"
+    default: true
