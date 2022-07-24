@@ -141,106 +141,106 @@ public class Plugin extends PluginBase implements Listener {
                 int id = ((FormResponseSimple) e.getResponse()).getClickedButtonId();
                 switch (id) {
                     case 0:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Taking Inventory", "Press 'E' to open your inventory\n\n\nParent: -"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Taking Inventory", "Press 'E' to open your inventory\n\n\nRequires: -"));
                         return;
                     case 1:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Getting Wood", "Attack a tree until a block of wood pops out\n\n\nParent: Taking Inventory"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Getting Wood", "Attack a tree until a block of wood pops out\n\n\nRequires: Taking Inventory"));
                         return;
                     case 2:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Benchmarking", "Craft a workbench with four blocks of planks\n\n\nParent: Getting Wood"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Benchmarking", "Craft a workbench with four blocks of planks\n\n\nRequires: Getting Wood"));
                         return;
                     case 3:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Time to Mine!", "Use planks and sticks to make a pickaxe\n\n\nParent: Benchmarking"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Time to Mine!", "Use planks and sticks to make a pickaxe\n\n\nRequires: Benchmarking"));
                         return;
                     case 4:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Hot Topic", "Construct a furnace out of eight cobblestone blocks\n\n\nParent: Time to Mine!"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Hot Topic", "Construct a furnace out of eight cobblestone blocks\n\n\nRequires: Time to Mine!"));
                         return;
                     case 5:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Acquire Hardware", "Smelt an iron ingot\n\n\nParent: Hot Topic"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Acquire Hardware", "Smelt an iron ingot\n\n\nRequires: Hot Topic"));
                         return;
                     case 6:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Time to Farm!", "Use planks and sticks to make a hoe\n\n\nParent: Benchmarking"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Time to Farm!", "Use planks and sticks to make a hoe\n\n\nRequires: Benchmarking"));
                         return;
                     case 7:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Bake Bread", "Turn wheat into bread\n\n\nParent: Time to Farm!"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Bake Bread", "Turn wheat into bread\n\n\nRequires: Time to Farm!"));
                         return;
                     case 8:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("The Lie", "Bake cake using wheat, sugar, milk, and eggs\n\n\nParent: Time to Farm!"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("The Lie", "Bake a cake using wheat, sugar, milk, and eggs\n\n\nRequires: Time to Farm!"));
                         return;
                     case 9:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Getting an Upgrade", "Construct a better pickaxe\n\n\nParent: Time to Mine!"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Getting an Upgrade", "Construct a better pickaxe\n\n\nRequires: Time to Mine!"));
                         return;
                     case 10:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Delicious Fish", "Catch and cook a fish\n\n\nParent: Hot Topic"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Delicious Fish", "Catch and cook a fish\n\n\nRequires: Hot Topic"));
                         return;
                     case 11:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("On A Rail", "Travel by minecart at least 1 km from where you started\n\n\nParent: Acquire Hardware"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("On A Rail", "Travel by minecart at least 1 km from where you started\n\n\nRequires: Acquire Hardware"));
                         return;
                     case 12:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Time to Strike!", "Use planks and sticks to make a sword\n\n\nParent: Benchmarking"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Time to Strike!", "Use planks and sticks to make a sword\n\n\nRequires: Benchmarking"));
                         return;
                     case 13:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Monster Hunter", "Attack and destroy a monster\n\n\nParent: Time to Strike!"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Monster Hunter", "Attack and destroy a monster\n\n\nRequires: Time to Strike!"));
                         return;
                     case 14:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Cow Tipper", "Harvest some leather\n\n\nParent: Time to Strike!"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Cow Tipper", "Harvest some leather\n\n\nRequires: Time to Strike!"));
                         return;
                     case 15:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("When Pigs Fly", "Fly a pig off a cliff\n\n\nParent: Cow Tipper"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("When Pigs Fly", "Fly a pig off a cliff\n\n\nRequires: Cow Tipper"));
                         return;
                     case 16:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Sniper Duel", "Kill a skeleton with an arrow from more than 50 meters\n\n\nParent: Monster Hunter"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Sniper Duel", "Kill a skeleton with an arrow from more than 50 meters\n\n\nRequires: Monster Hunter"));
                         return;
                     case 17:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("DIAMONDS!", "Acquire diamonds with your iron tools\n\n\nParent: Acquire Hardware"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("DIAMONDS!", "Acquire diamonds with your iron tools\n\n\nRequires: Acquire Hardware"));
                         return;
                     case 18:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("We Need to Go Deeper", "Build a portal to the Nether\n\n\nParent: DIAMONDS!"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("We Need to Go Deeper", "Build a portal to the Nether\n\n\nRequires: DIAMONDS!"));
                         return;
                     case 19:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Return to Sender", "Destroy a Ghast with a fireball\n\n\nParent: We Need to Go Deeper"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Return to Sender", "Destroy a Ghast with a fireball\n\n\nRequires: We Need to Go Deeper"));
                         return;
                     case 20:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Into Fire", "Relieve a Blaze of its rod\n\n\nParent: We Need to Go Deeper"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Into Fire", "Relieve a Blaze of its rod\n\n\nRequires: We Need to Go Deeper"));
                         return;
                     case 21:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Local Brewery", "Brew a potion\n\n\nParent: Into Fire"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Local Brewery", "Brew a potion\n\n\nRequires: Into Fire"));
                         return;
                     case 22:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("The End?", "Locate the End\n\n\nParent: Into Fire"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("The End?", "Locate the End\n\n\nRequires: Into Fire"));
                         return;
                     case 23:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("The End.", "Defeat the Ender Dragon\n\n\nParent: The End?"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("The End.", "Defeat the Ender Dragon\n\n\nRequires: The End?"));
                         return;
                     case 24:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Enchanter", "Use a book, obsidian and diamonds to construct an enchantment table\n\n\nParent: DIAMONDS!"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Enchanter", "Use a book, obsidian and diamonds to construct an enchantment table\n\n\nRequires: DIAMONDS!"));
                         return;
                     case 25:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Overkill", "Deal nine hearts of damage in a single hit\n\n\nParent: Enchanter"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Overkill", "Deal nine hearts of damage in a single hit\n\n\nRequires: Enchanter"));
                         return;
                     case 26:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Librarian", "Build some bookshelves to improve your enchantment table\n\n\nParent: Enchanter"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Librarian", "Build some bookshelves to improve your enchantment table\n\n\nRequires: Enchanter"));
                         return;
                     case 27:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Adventuring Time", "Discover all biomes\n\n\nParent: The End?"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Adventuring Time", "Discover all biomes\n\n\nRequires: The End?"));
                         return;
                     case 28:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("The Beginning?", "Spawn the Wither\n\n\nParent: The End."));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("The Beginning?", "Spawn the Wither\n\n\nRequires: The End."));
                         return;
                     case 29:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("The Beginning.", "Kill the Wither\n\n\nParent: The Beginning?"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("The Beginning.", "Kill the Wither\n\n\nRequires: The Beginning?"));
                         return;
                     case 30:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Beaconator", "Create a full beacon\n\n\nParent: The Beginning."));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Beaconator", "Create a full beacon\n\n\nRequires: The Beginning."));
                         return;
                     case 31:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Repopulation", "Breed two cows with wheat\n\n\nParent: Cow Tipper"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Repopulation", "Breed two cows with wheat\n\n\nRequires: Cow Tipper"));
                         return;
                     case 32:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Diamonds to you!", "Throw diamonds at another player\n\n\nParent: DIAMONDS!"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Diamonds to you!", "Throw diamonds at another player\n\n\nRequires: DIAMONDS!"));
                         return;
                     case 33:
-                        e.getPlayer().showFormWindow(new FormWindowSimple("Overpowered", "Eat the Notch apple\n\n\nParent: Getting an Upgrade"));
+                        e.getPlayer().showFormWindow(new FormWindowSimple("Overpowered", "Eat the Notch apple\n\n\nRequires: Getting an Upgrade"));
                         return;
                     default:
                         getLogger().error("Invalid button id: " + id);
